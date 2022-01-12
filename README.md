@@ -20,7 +20,7 @@ This action scan a project and send the results on ASoC
 ## Example usage
 
 ```yaml
-uses: alphayax/@v1
+uses: alphayax/appscan-sast-action@v1
 with:
   api-secret: "xxxxx"
   api-id: "xxxxx"
