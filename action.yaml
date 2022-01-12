@@ -1,0 +1,19 @@
+name: 'AppScan SAST'
+description: 'Scan project with AppScan'
+inputs:
+  api-secret:
+    description: 'ASoC Key Secret'
+    required: true
+  api-id:
+    description: 'ASoC Key Id'
+    required: true
+  application-id:
+    description: 'Application Id (guid)'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  env:
+    APIKEY_SECRET: ${{ inputs.api-secret }}
+    APIKEY_ID: ${{ inputs.api-id }}
+    APPLICATION_ID: ${{ inputs.application-id }}
