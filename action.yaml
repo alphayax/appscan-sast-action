@@ -1,5 +1,8 @@
 name: 'AppScan SAST'
 description: 'Scan project with AppScan'
+branding:
+  color: blue
+  icon: cloud-snow
 inputs:
   api-secret:
     description: 'ASoC Key Secret'
