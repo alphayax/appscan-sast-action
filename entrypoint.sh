@@ -7,4 +7,4 @@ appscan.sh api_login -P "$APIKEY_SECRET" -u "$APIKEY_ID"
 appscan.sh prepare -n scan
 
 # Send for Analysis to ASoC
-appscan.sh queue_analysis -a "$APPLICATION_ID" -f scan.irx -n "Scan github ${GITHUB_SHA}"
+appscan.sh queue_analysis -a "$APPLICATION_ID" -f scan.irx -n "Scan ${GITHUB_REF_NAME} - ${GITHUB_SHA:0:8}"
